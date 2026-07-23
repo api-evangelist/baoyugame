@@ -1,7 +1,26 @@
 aid: baoyugame
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baoyugame.png
 name: baoyugame
-description: baoyugame is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: baoyugame (Guangzhou Baoyou Network Technology) is a Chinese game development and
+  publishing studio founded in 2011 and headquartered in Guangzhou, focused on the research and
+  development of mobile games and web (browser) games. Its founding team came from established
+  studios including NetEase, and it operates multiple internal game studios with a development team
+  of roughly 100 people, shipping turn-based RPG, ARPG, and strategy titles. The company is
+  venture-backed, appearing in the portfolios of Qiming Venture Partners, Morningside Venture
+  Capital, and Jiuhe Capital. baoyugame publishes a consumer game website only and exposes no
+  public developer API, documentation, or SDK surface, so this profile carries company identity
+  rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/baoyugame/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Gaming
+- Game Development
+- Mobile Games
+- Web Games
+- Entertainment
+- China
+- Venture Backed
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baoyugame-domain-security.yml
 - type: Website
   url: https://baoyugame.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
